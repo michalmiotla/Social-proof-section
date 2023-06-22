@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(300, 24%, 96%);
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+}
+
+.wrapper {
+  min-width: 350px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  padding: 0 1.5em;
+}
+.wrapper .header,
+.wrapper .ratings,
+.wrapper .opinions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wrapper .header {
+  grid-row: 1/2;
+  justify-content: center;
+}
+.wrapper .header__title {
+  font-size: 3.6rem;
+  color: hsl(300, 43%, 22%);
+  line-height: 0.8;
+  padding-top: 2.2em;
+}
+.wrapper .header__text {
+  font-size: 1.7rem;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.3;
+  padding-top: 1.2em;
+}
+.wrapper .ratings {
+  grid-row: 2/3;
+  margin-top: 1em;
+  justify-content: space-evenly;
+}
+.wrapper .ratings__block {
+  width: 100%;
+  height: 75px;
+  padding: 1em 2em;
+  background-color: rgba(238, 104, 164, 0.05);
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+.wrapper .ratings__block-text {
+  padding-top: 0.5em;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.wrapper .opinions {
+  grid-row: 3/6;
+  justify-content: start;
+  margin-top: 2em;
+}
+.wrapper .opinions__block {
+  margin-bottom: 1em;
+  padding: 1em 2.5em;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 225px;
+}
+.wrapper .opinions__block-person {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wrapper .opinions__block-person-img-photo {
+  padding: 1em 0;
+  width: 2.6em;
+  border-radius: 50%;
+}
+.wrapper .opinions__block-person-data {
+  padding-left: 2em;
+  text-align: left;
+}
+.wrapper .opinions__block-person-data-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  padding-bottom: 0.3em;
+}
+.wrapper .opinions__block-person-data-status {
+  color: hsl(333, 80%, 67%);
+}
+.wrapper .opinions__block-text-description {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.4;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
